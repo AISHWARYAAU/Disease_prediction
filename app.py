@@ -11,17 +11,16 @@ st.set_page_config(page_title="Health Assistant",
 # getting the working directory of the main.py
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
+
+
+
 # loading the saved models
 
-diabetes_model_path = 'C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/diabetes_model.sav'
-heart_disease_model_path = 'C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/heart_disease_model.sav'
-parkinsons_model_path = 'C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/parkinsons_model.sav'
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-diabetes_model = pickle.load(open('C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open('C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/parkinsons_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
-
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 # Sidebar for navigation
 with st.sidebar:
     selected = option_menu('Machine Learning Diseases Prediction System',
