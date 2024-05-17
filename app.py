@@ -17,9 +17,9 @@ diabetes_model_path = 'C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-st
 heart_disease_model_path = 'C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/heart_disease_model.sav'
 parkinsons_model_path = 'C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/parkinsons_model.sav'
 
-diabetes_model = pickle.load(open(diabetes_model_path, 'rb'))
-heart_disease_model = pickle.load(open(heart_disease_model_path, 'rb'))
-parkinsons_model = pickle.load(open(parkinsons_model_path, 'rb'))
+diabetes_model = pickle.load(open('C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/diabetes_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/heart_disease_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('C:/Users/Hp/anaconda3/envs/multiple-disease-prediction-streamlit-app-main/saved_models/parkinsons_model.sav', 'rb'))
 
 
 # Sidebar for navigation
